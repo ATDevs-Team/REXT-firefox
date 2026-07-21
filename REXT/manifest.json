@@ -9,7 +9,8 @@
     "https://raw.githubusercontent.com/*"
   ],
   "action": {
-    "default_popup": "window.html"
+    "default_popup": "window.html",
+    "default_icon": "REXTicon.png"
   },
   "content_scripts": [
     {
