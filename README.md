@@ -13,7 +13,9 @@ have fun!! :3
 
 > We have recieved 5 requests so far  
 > 0 of which were rejected  
-> 5 of which were accepted
+> 6 of which were accepted  
+> **5/6 implemented!**  
+We commit all the blacklist changes every Sunday.  
 
 but reso,
 # how do i download?  
