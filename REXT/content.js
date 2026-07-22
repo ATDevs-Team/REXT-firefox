@@ -4,6 +4,28 @@ let blockedGameIds = new Set();
 let isFilterEnabled = true;
 
 let observer = null;
+async function loadAllBlacklists() {
+  try {
+    const response = await fetch(REMOTE_BLACKLIST_URL);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
+    const text = await response.text();
+    const ids = text
+      .split('\n')
+      .map(id => id.trim())
+      .filter(id => id.length > 0);
+
+    blockedGameIds = new Set(ids);
+    if (isFilterEnabled) {
+      removeBlockedGames();
+      observeDOM();
+    }
+  } catch (error) {
+    console.error('Failed to load blacklist:', error);
+  }
+}
 
 function removeBlockedGames() {
   if (typeof chrome === 'undefined' || !chrome.runtime?.id) {
