@@ -12,7 +12,7 @@ If demand is too high, we close the form temporarily until we can catch up.
 have fun!! :3  
 
 > 0 rejected  
-> 27 accepted    
+> 28 accepted    
 We commit all the blacklist changes every Sunday.  
 
 but reso,
