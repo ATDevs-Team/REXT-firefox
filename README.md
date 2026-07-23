@@ -1,3 +1,5 @@
+# This fork is currently being set up, please come back later
+
 # WARNING
 this is **community driven**  
 every game you expect to be blocked might not be on there (yet)  
